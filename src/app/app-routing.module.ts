@@ -1,3 +1,4 @@
+import { AddProductComponent } from './add-product/add-product.component';
 import { CategoryDetailsComponent } from './category-details/category-details.component';
 import { ProductsQPCategoryComponent } from './products-qpcategory/products-qpcategory.component';
 import { ProductsCategoryComponent } from './products-category/products-category.component';
@@ -13,9 +14,19 @@ const routes: Routes = [
     {path:"details/:id", component:CategoryDetailsComponent}
   ]},
   {path:"test", component:TestComponent},
+  {path:"addp", component:AddProductComponent},
 
   {path:"products/:id", component:ProductsCategoryComponent},
   {path:"products", component:ProductsQPCategoryComponent},
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
+  },
+  {
+    path: 'apropos',
+    loadChildren: () => import('./apropos/apropos.module').then(m => m.AProposModule)
+  },
+
   {path:"**", component:NotFoundComponent},
 ];
 

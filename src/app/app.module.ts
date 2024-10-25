@@ -15,6 +15,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductsCategoryComponent } from './products-category/products-category.component';
 import { ProductsQPCategoryComponent } from './products-qpcategory/products-qpcategory.component';
 import { CategoryDetailsComponent } from './category-details/category-details.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CategoryDetailsComponent } from './category-details/category-details.co
     NotFoundComponent,
     ProductsCategoryComponent,
     ProductsQPCategoryComponent,
-    CategoryDetailsComponent
+    CategoryDetailsComponent,
+    AddProductComponent
   ],
   imports: [ //la liste des modules à utiliser
     BrowserModule,

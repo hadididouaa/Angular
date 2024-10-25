@@ -13,8 +13,8 @@ export class ProductsQPCategoryComponent {
   }
 
   ngOnInit(){
-   // this.id=this.ac.snapshot.queryParams['id'];
-   // this.ac.queryParamMap.subscribe(res=>this.id=Number(res.get('id')));
+    this.id=this.ac.snapshot.queryParams['id'];
+    this.ac.queryParamMap.subscribe(res=>this.id=Number(res.get('id')));
     this.ac.queryParams.subscribe(res=>this.id=res['id']);
     console.log("je suis le ngOnInit");
   }
