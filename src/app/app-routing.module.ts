@@ -1,3 +1,4 @@
+import { AddProductReactiveComponent } from './add-product-reactive/add-product-reactive.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { CategoryDetailsComponent } from './category-details/category-details.component';
 import { ProductsQPCategoryComponent } from './products-qpcategory/products-qpcategory.component';
@@ -15,7 +16,7 @@ const routes: Routes = [
   ]},
   {path:"test", component:TestComponent},
   {path:"addp", component:AddProductComponent},
-
+  {path:"add", component:AddProductReactiveComponent},
   {path:"products/:id", component:ProductsCategoryComponent},
   {path:"products", component:ProductsQPCategoryComponent},
   {

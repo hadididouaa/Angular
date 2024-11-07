@@ -8,7 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { HefooterComponent } from './hefooter/hefooter.component';
 import { HehomeComponent } from './hehome/hehome.component';
 import { ListCategoriesComponent } from './list-categories/list-categories.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContainsPipe } from './contains.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -16,6 +16,7 @@ import { ProductsCategoryComponent } from './products-category/products-category
 import { ProductsQPCategoryComponent } from './products-qpcategory/products-qpcategory.component';
 import { CategoryDetailsComponent } from './category-details/category-details.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { AddProductReactiveComponent } from './add-product-reactive/add-product-reactive.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +34,14 @@ import { AddProductComponent } from './add-product/add-product.component';
     ProductsCategoryComponent,
     ProductsQPCategoryComponent,
     CategoryDetailsComponent,
-    AddProductComponent
+    AddProductComponent,
+    AddProductReactiveComponent
   ],
   imports: [ //la liste des modules à utiliser
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [], //services à utiliser
   bootstrap: [AppComponent] //les composants à appeler dans le fichier index.html
