@@ -13,9 +13,7 @@ export class ListCategoriesComponent {
     console.log("test "+ch);
   }
 
-    getDescription(desc:string){
-      alert(desc);
-    }
+   
 
 
 
@@ -28,4 +26,7 @@ export class ListCategoriesComponent {
 {"id":6,"title":"Produits voiture", "image":"assets/images/produits_nettoyages.jpg", "description":"desc6","available":false},
 
   ]
+  getNotif() {
+    alert("Notification message");
+  }
 }

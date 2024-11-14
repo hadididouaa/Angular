@@ -17,6 +17,7 @@ import { ProductsQPCategoryComponent } from './products-qpcategory/products-qpca
 import { CategoryDetailsComponent } from './category-details/category-details.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { AddProductReactiveComponent } from './add-product-reactive/add-product-reactive.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AddProductReactiveComponent } from './add-product-reactive/add-product-
     ProductsQPCategoryComponent,
     CategoryDetailsComponent,
     AddProductComponent,
-    AddProductReactiveComponent
+    AddProductReactiveComponent,
+    CardComponent
   ],
   imports: [ //la liste des modules à utiliser
     BrowserModule,
