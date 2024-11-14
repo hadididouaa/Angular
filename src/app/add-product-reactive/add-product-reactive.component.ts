@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-add-product-reactive',
@@ -8,14 +8,23 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class AddProductReactiveComponent implements OnInit {
 myForm: FormGroup;
-name ;
+nametest = new FormControl() ;
 ngOnInit(){  //méthode hook : utile pour l'initialisation
  this.myForm=new FormGroup({
-  name : new FormControl(),
+  name : new FormControl("",[Validators.required,Validators.minLength(3)]),
   price: new FormControl(),
   description : new FormControl()
  })
 
 }
+get name(){
+  return this.myForm.get('name')
+}
 
+send(){
+ if  (this.myForm.valid){
+  console.log(this.myForm.value)
+ }
+  console.log('tttt')
+}
 }
